@@ -4,9 +4,9 @@ void main() {
 
 void variablePlayground() {
   // basicTypes();
-  untypedVariables();
+  // untypedVariables();
   // typeInterpolation();
-  // immutableVariables();
+  immutableVariables();
 }
 
 void basicTypes() {
@@ -45,12 +45,9 @@ void typeInterpolation() {
   print(aBoolean);
 }
 
-// This is the preferred way to declare variables
-// The `final` keyword will only allow you assign
-// a variable once.
 void immutableVariables() {
-  const int immutableInteger = 5;
-  const double immutableDouble = 0.015;
+  // const int immutableInteger = 5;
+  // const double immutableDouble = 0.015;
 
   // Type annotation is optional
   const interpolatedInteger = 10;
