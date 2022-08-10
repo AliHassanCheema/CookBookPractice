@@ -72,12 +72,6 @@ void optionalParameters() {
   print(multiply);
 }
 
-typedef numberGetter = int Function();
-
-int powerOfTwo({numberGetter? getter}) {
-  return getter!() * getter();
-}
-
 void callbackExample(void Function(String value) callback) {
   callback('Hello Callback');
 }
@@ -95,10 +89,6 @@ void consumeClosure() {
   closureInvoker(() {
     print('I am written inline');
   });
-
-  final getFour = () => 4;
-  final squared = powerOfTwo(getter: getFour);
-  print(squared);
 
   callbackExample((result) {
     print(result);
